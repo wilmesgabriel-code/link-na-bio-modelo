@@ -29,6 +29,20 @@
       border-radius: 10px; font-weight: bold; border: 1px solid #3f3f5a;
     }
     .btn-destaque { background: #25D366; color: #000000; border: none; }
+    .player-box {
+      background: #2b2b40;
+      padding: 12px;
+      border-radius: 10px;
+      margin-top: 10px;
+      border: 1px solid #3f3f5a;
+    }
+    .player-titulo {
+      font-size: 12px;
+      color: #ff9800;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    audio { width: 100%; height: 40px; }
     .info { margin-top: 25px; font-size: 12px; color: #888888; }
   </style>
 </head>
@@ -43,10 +57,17 @@
     <a href="#local" class="btn">Ver Localização no Mapa</a>
     <a href="#instagram" class="btn">Seguir no Instagram</a>
 
-    <iframe style="border-radius:12px; margin-top: 10px;" src="https://spotify.com" width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class="player-box">
+      <div class="player-titulo">🎵 Música Ambiente</div>
+      <audio controls loop>
+        <source src="https://soundhelix.com" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+      </audio>
+    </div>
 
     <div class="info">Site criado por Gabriel Wilmes</div>
   </div>
 </body>
 </html>
+
 
